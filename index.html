@@ -1,70 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Budget Tracker</title>
+    <title>My Budget Tracker</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <img src="https://via.placeholder.com/80" alt="Budget Tracker logo" width="80">
-
-    <h1 id="main-heading">Personal Budget Tracker</h1>
-
-    <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/G3e-cpL7ofc"
-        title="HTML and CSS Full Course"
-        frameborder="0">
-    </iframe>
+    <h1 id="main-heading">My Budget Tracker</h1>
 
     <p>Track your income and expenses in one place.</p>
-
-    <details>
-        <summary>Budget Tracker Help</summary>
-        <p>Use the form below to enter your expense details.</p>
-    </details>
 
     <section class="add-expense-section">
 
         <h2>Add Expense</h2>
 
-        <form>
+        <input type="text" placeholder="Expense name">
 
-            <label for="date">Date:</label>
-            <input type="date" id="date" required>
+        <input type="number" placeholder="Amount">
 
-            <br><br>
-
-            <label for="expense-name">Expense Name:</label>
-            <input type="text" id="expense-name" required>
-
-            <br><br>
-
-            <label for="expense-amount">Amount:</label>
-            <input type="number" id="expense-amount" required>
-
-            <br><br>
-
-            <label for="expense-category">Category:</label>
-
-            <select id="expense-category" required>
-                <option value="">Select a category</option>
-                <option value="food">Food</option>
-                <option value="transport">Transport</option>
-                <option value="rent">Rent</option>
-                <option value="entertainment">Entertainment</option>
-                <option value="other">Other</option>
-            </select>
-
-            <br><br>
-
-            <button type="button">Add Expense</button>
-
-        </form>
+        <input type="text" placeholder="Category">
 
     </section>
 
@@ -72,55 +31,10 @@
 
         <h2>Your Expenses</h2>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Amount</th>
-                    <th>Category</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>Lunch</td>
-                    <td>$8</td>
-                    <td>Food</td>
-                    <td>2026-09-20</td>
-                </tr>
-
-                <tr>
-                    <td>Bus Fare</td>
-                    <td>$5</td>
-                    <td>Transport</td>
-                    <td>2026-09-19</td>
-                </tr>
-
-                <tr>
-                    <td>Rent</td>
-                    <td>$100</td>
-                    <td>Rent</td>
-                    <td>2026-09-18</td>
-                </tr>
-
-                <tr>
-                    <td>Movie</td>
-                    <td>$12</td>
-                    <td>Entertainment</td>
-                    <td>2026-09-17</td>
-                </tr>
-
-                <tr>
-                    <td>Notebook</td>
-                    <td>$4</td>
-                    <td>Other</td>
-                    <td>2026-09-16</td>
-                </tr>
-            </tbody>
-        </table>
+        <p>No expenses yet.</p>
 
     </section>
 
 </body>
+
 </html>
